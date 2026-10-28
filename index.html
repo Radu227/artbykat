@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtByKat - Măști din Clei</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>ArtByKat</h1>
+    <nav>
+      <!-- Aici "Galerie" primește culoarea și sublinierea, pentru că suntem pe pagina principală -->
+      <a href="index.html" style="color: var(--primary-color); border-bottom: 1px solid var(--primary-color);">Galerie</a>
+      <a href="about.html">Despre Artist</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <p class="gallery-hint">Apasă pe imagini pentru a vizualiza detaliile fiecărei măști.</p>
+        <!-- Grid-ul cu produse -->
+    <div class="gallery-grid" id="gallery">
+      <div class="card" data-desc="Masca tribala cu pene luptator sangeros">
+        <img src="./assets/image00001.jpeg" alt="Masca tribala cu pene luptator sangeros" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca tribala al treilea ochi">
+        <img src="./assets/image00002.jpeg" alt="Masca tribala al treilea ochi" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca verde al treilea ochi">
+        <img src="./assets/image00003.jpeg" alt="Masca verde al treilea ochi" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Set masti fete SPP">
+        <img src="./assets/image00004.jpeg" alt="Set masti fete SPP" class="product-image">
+      </div>
+
+      <div class="card" data-desc="Guerlain cvatriplu alb SPP">
+        <img src="./assets/image00005.jpeg" alt="Guerlain cvatriplu alb SPP" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca demon japonez">
+        <img src="./assets/image00006.jpeg" alt="Masca demon japonez" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca freaky demon cu cercei">
+        <img src="./assets/image00007.jpeg" alt="Masca freaky demon cu cercei" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca tribala O">
+        <img src="./assets/image00008.jpeg" alt="Masca tribala O" class="product-image">
+      </div>
+
+      <div class="card" data-desc="Guerlain cvatriplu in soare">
+        <img src="./assets/image00009.jpeg" alt="Guerlain cvatriplu in soare" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Masca SPP">
+        <img src="./assets/image00010.jpeg" alt="Masca SPP" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Set baietii SPP">
+        <img src="./assets/image00011.jpeg" alt="Set baietii SPP" class="product-image">
+      </div>
+      
+      <div class="card" data-desc="Set intreg SPP">
+        <img src="./assets/image00012.jpeg" alt="Set intreg SPP" class="product-image">
+      </div>
+
+      <div class="card" data-desc="Masca jaguar SPP">
+        <img src="./assets/image00013.jpeg" alt="Masca 4" class="product-image">
+      </div>
+    </div>
+
+    <!-- Modalul ascuns pentru vizualizare mare -->
+    <div id="imageModal" class="modal">
+      <span class="close-btn">&times;</span>
+      <img class="modal-content" id="expandedImg">
+      <div id="caption"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Pentru comenzi sau detalii, lasă-mi un mesaj pe <a href="https://www.instagram.com/art_by_kat13?mdxt=NTJ6OTQxcWpicWMx" target="_blank">Instagram</a>.</p>
+    <p class="footer-links"><a href="ingrijire.html">Ghid de îngrijire a măștilor</a></p>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
