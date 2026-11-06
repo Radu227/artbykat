@@ -1,3 +1,5 @@
+import { inject } from '@vercel/analytics';
+inject();
 const modal = document.getElementById("imageModal");
 const expandedImg = document.getElementById("expandedImg");
 const captionText = document.getElementById("caption");
